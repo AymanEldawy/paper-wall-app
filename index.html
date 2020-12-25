@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css  ">
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <h4 class="brand">Paper</h4>
+      <span href="" onclick="openModal()"><i class="fa fa-plus"></i></span>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="wall">
+    </div>
+    <div class="modal">
+      <div class="form-add-category">
+        <input type="text" placeholder="Add new category">
+        <button type="button" onclick="addCategory()">Save</button>
+        <i class="fa fa-times" onclick="closeModal()"></i>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
