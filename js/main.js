@@ -13,7 +13,6 @@ const serialNumber = (word) => {
 
 // Variables DOM
 const categoryTitle = document.querySelector('.form-add-category input');
-
 const formPaper = document.querySelector('.form-add-Paper');
 // Store 
 let storePaper = {
@@ -55,12 +54,7 @@ function displayPaper(catId) {
   }
   return content ? content : '<div class="no-item">There is no item ! </div>';
 }
-function displayAllCount(catId){
-  // let papers = storePaper.fetchPapers();
-  // return papers.filter(paper => {
-  //   return paper.category === catId
-  // }).length
-}
+
 function displayCount(catId){
   let papers = storePaper.fetchPapers();
   let all = papers.filter(paper => {
@@ -136,6 +130,7 @@ function deleteCategory(item) {
     return category.id !== item.id
   })
   storePaper.savePaperCategory(newCategories); // Update data in localStorage
+  displayCategories(); // reRender Content
 }
 
 // addPaper
