@@ -130,7 +130,7 @@ function deleteCategory(item) {
     return category.id !== item.id
   })
   storePaper.savePaperCategory(newCategories); // Update data in localStorage
-  displayCategories(); // reRender Content
+  window.location.reload()
 }
 
 // addPaper
